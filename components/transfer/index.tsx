@@ -22,7 +22,7 @@ export interface TransferProps {
   dataSource: TransferItem[];
   targetKeys: string[];
   selectedKeys?: string[];
-  render?: (record: TransferItem) => React.ReactNode;
+  render?: (record: TransferItem) => React.ReactElement<any>;
   onChange?: (targetKeys: string[], direction: string, moveKeys: any) => void;
   onSelectChange?: (sourceSelectedKeys: string[], targetSelectedKeys: string[]) => void;
   style?: React.CSSProperties;

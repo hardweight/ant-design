@@ -23,13 +23,13 @@ export interface TransferListProps {
   handleSelect: (selectedItem: any, checked: boolean) => void;
   handleSelectAll: (dataSource: any[], checkAll: boolean) => void;
   handleClear: () => void;
-  render?: (item: any) => any;
+  render?: (item: any) => React.ReactElement<any>;
   body?: (props: any) => any;
   footer?: (props: any) => void;
   checkedKeys: string[];
   checkStatus?: boolean;
   position?: string;
-  notFoundContent?: React.ReactNode | string;
+  notFoundContent?: React.ReactNode;
   filterOption: (filterText: any, item: any) => boolean;
   lazy?: boolean | {};
 }
